@@ -1,5 +1,10 @@
 # Email subscribe
-To do
-[ ] Verify email
-[ ] Check if input is empty
-![Email Subscribe - 14 April 2023](https://user-images.githubusercontent.com/100975883/232183512-6a57ae3a-8643-443f-bd05-2b85312e6b78.gif)
+
+## To do
+
+- [ ] Check if input is empty
+- [ ] Verify email
+
+## Preview
+
+![Email Subscribe - 14 April 2023 (1)](https://user-images.githubusercontent.com/100975883/232183845-7445faa0-c2bf-4806-851d-5c6b7e19344d.gif)
