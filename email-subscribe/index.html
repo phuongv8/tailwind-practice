@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Email Subscribe</title>
+  </head>
+  <body>
+    <div class="flex items-center justify-center bg-zinc-700 h-screen">
+      <div class="bg-zinc-800 mx-6 p-2 rounded-2xl">
+        <div class="flex flex-col md:flex-row rounded-l-xl">
+          <img
+            class="object-fit rounded-xl h-64 w-56 transform hover:scale-105 duration-200 mx-auto"
+            src="cat-1.jpeg"
+            alt=""
+          />
+          <div class="p-6 md:p-12">
+            <h2
+              class="font-serif text-xl font-medium text-center text-white md:text-left"
+            >
+              Feeling down? Let us help you purr up!
+            </h2>
+            <p
+              class="max-w-xs my-4 text-xs leading-5 tracking-wide text-center md:text-left text-white"
+            >
+              Meow's the time to subscribe and let the cat memes heal your soul!
+            </p>
+            <div
+              class="flex flex-col md:flex-row mt-5 space-y-4 md:space-x-3 md:space-y-0"
+            >
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600 placeholder:text-xs placeholder:text-center placeholder:md:text-left md:text-left focus:outline-none"
+                id="email-input"
+              />
+
+              <button
+                class="px-5 py-3 text-xs rounded-md text-zinc-800 bg-lime-500 hover:bg-lime-700 hover:text-white duration-500"
+                onclick="handleSubscribe()"
+              >
+                Subscribe
+              </button>
+            </div>
+            <div class="success-message" hidden>
+              <p
+                class="max-w-xs font-serif font-medium text-lime-300 text-center my-4"
+              >
+                Welcome to the coolest cat club ever ฅ^._.^ฅ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function handleSubscribe() {
+      const emailInput = document.getElementById('email-input');
+      emailInput.style.display = 'none';
+
+      const subscribeButton = document.querySelector('button');
+      subscribeButton.style.display = 'none';
+
+      const successMessage = document.querySelector('.success-message');
+      successMessage.removeAttribute('hidden');
+    }
+  </script>
+</html>
